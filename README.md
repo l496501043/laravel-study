@@ -2,7 +2,7 @@
 #1.环境：
 	国内local环境，mac＋apache＋php5.6.17
 #2.准备：
-	git clone https://github.com/laravel/laravel.git获取官方代码，试网络环境决定快慢
+	git clone https://github.com/laravel/laravel.git获取官方代码
 #3.安装：
 	程序下拷贝下来后准备composer安装（`sudo composer install`）  
 结果国内镜像有问题还是怎么回事，总是失败，然后去我的香港vps上面把第二步和composer install走了一遍，把vendor目录拷贝下来放在laravel根目录  
