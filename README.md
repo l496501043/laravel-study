@@ -13,3 +13,13 @@ Warning: require(/Users/liugx/work/laravel/bootstrap/../vendor/autoload.php): fa
 sudo vi /etc/apache2/httpd.conf  
 查找到mod_rewrite.so ，将这行前面的注释符号＃去掉，然后找到httpd-vhost.conf中AllowOverride None改成AllowOverride All								
 #5.可以愉快的玩耍了。
+
+
+＃遇到的过坑
+laravel$ php artisan migrate
+[PDOException]
+SQLSTATE[HY000] [2002] No such file or directory
+
+不知有更好的方法没有：
+修改文件 ./config/database.php 中的 connections 下的 mysql 添加
+‘unix_socket' => '/tmp/mysql.sock’,
